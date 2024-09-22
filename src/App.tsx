@@ -49,7 +49,7 @@ function App() {
           <ul className={styles.list}>
             {data.map((item)=>{
               return (
-                <li className={styles.listItem}>
+                <li key={item.title} className={styles.listItem}>
                   <span className={styles.itemYear}>{item.year} - </span>
                   <span className={styles.itemTitle}>{item.title}</span>
                 </li>
